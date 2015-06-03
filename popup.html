@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>输入class</title>
+		<style>
+			.container {
+				width: 155px;
+				font-size: 14px;
+			}
+			.container .input-con {
+				width: 100%;
+				text-align: center;
+			}
+			.input-con input {
+				width: 110px;
+				height: 20px;
+				outline: none;
+				line-height: 20px;
+			    margin: 8px 0 3px 0;
+				padding: 3px 6px;
+				vertical-align: middle;
+				border: 1px solid #dedede;
+			}
+		</style>
+		<!-- 引入JS文件，这里引入的文件只能在popup.html页面中使用，不能再web页面中使用（页面中的为content script） -->
+		
+	</head>
+	<body>
+		<div class="container">
+			请输入图片容器的Class: 
+			<div class="input-con"><input class="className" type="text"></div>
+		</div>
+		<script src="lib/js/jquery.min.js"></script>
+		<script src="popup.js"></script>
+	</body>
+</html>
